@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", serif;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.23);
+}
+
+nav a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a.active {
+  color: #fff;
+}
+
+.indicator {
+  position: absolute;
+  width: 80px;
+  height: 80%;
+  background: #111;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: all 0.4s;
+  pointer-events: none;
+}
